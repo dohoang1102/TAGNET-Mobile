@@ -1,6 +1,7 @@
 TAGNET Mobile 1.x
+==========
 
-This app is developed for T.A.G. as a communications mechanism between our 
+This app has been developed for T.A.G. (Transportation Agent Grid, LP), as a communications mechanism between our 
 brokerage, and our IC Drivers (IDPs). T.A.G. dispatches available work to our IDPs, 
 they recieve the work via this app. Our IDPs enter POP, and POD info directly in to 
 the app. Paperwork normally carried by the IDP is no longer required, as the app itself
@@ -14,6 +15,19 @@ https://marketplace.appcelerator.com/apps/807?1911931423
 * uk.me.thepotters.atf.sys (http://www.apache.org/licenses/LICENSE-2.0)
 https://marketplace.appcelerator.com/apps/2184?688253914
 Release Notes : 
+
+1.081312rc
+==========
+
+* Open jobs now vertically stacks Pickup and Delivery, the current step always comes first.
+* Pickup and Delivery depart time removed, unless specified needed per company / customer number
+* Inbox - Estimated times default to Pickup and Delivery estimated times, respectively
+* Added functionality to delete a job from the device, under the open jobs screen, at the very bottom
+* Power consumption optimization
+* Art work
+* Fixed a bug where "Login" button would not appear on certain screen resolutions
+* Enabled "Messages", which confirm if the driver is "on time" to their estimated times
+* General fixed and optimizations
 
 1.081012rc
 ==========
@@ -59,7 +73,7 @@ Release Notes :
 
 TAGNET Mobile The Definitive Guide
 ==================================
-https://github.com/dperussina/TAGNET-Mobile-Release-Canidate/wiki/TAGNET-Mobile-The-Definitive-Guide
+* https://github.com/dperussina/TAGNET-Mobile-Release-Canidate/wiki/TAGNET-Mobile-The-Definitive-Guide
 
 ----------------------------------
 Stuff our legal folk make us say:
