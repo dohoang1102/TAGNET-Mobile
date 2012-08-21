@@ -42,7 +42,7 @@ function GLOBALS() {
 		// Width at load time, in pixels
 		_obj.screenWidth = Titanium.Platform.displayCaps.platformWidth;
 	}
-
+	Ti.API.warn('Width: ' + Titanium.Platform.displayCaps.platformWidth + ' height' + Titanium.Platform.displayCaps.platformHeight);
 	evSelect.close();
 	db.close();
 	db = null;

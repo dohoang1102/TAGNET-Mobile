@@ -377,6 +377,18 @@ function DisplayOrders() {
 
 			textAlign : Ti.UI.TEXT_ALIGNMENT_LEFT,
 		});
+		
+		this.puSpecialInstruction = Ti.UI.createLabel({
+			left : '2%',
+
+			text : 'Special Instructions : ' +  (jobData.puSpecialInstruction === null ? 'N/A, scroll down to see if notes available.': jobData.puSpecialInstruction), 
+
+			color : '#FF00FF',
+			font : openWindow.GLOBALS.font,
+
+			textAlign : Ti.UI.TEXT_ALIGNMENT_LEFT,
+		});
+		
 		this.dlHeader = Ti.UI.createLabel({
 			text : 'Delivery',
 			color : '#33b5e5',
@@ -407,6 +419,16 @@ function DisplayOrders() {
 
 			textAlign : Ti.UI.TEXT_ALIGNMENT_LEFT,
 		});
+		this.dlSpecialInstruction = Ti.UI.createLabel({
+			left : '2%',
+
+			text : 'Special Instructions : ' + (jobData.dlSpecialInstruction === null ? 'N/A, scroll down to see if notes available.': jobData.dlSpecialInstruction),
+
+			color : '#FF00FF',
+			font : openWindow.GLOBALS.font,
+
+			textAlign : Ti.UI.TEXT_ALIGNMENT_LEFT,
+		});
 		if (puCurrentStatus === true) {
 			this.dlLabel.color = '#fff';
 			this.puLabel.color = '#ccc';
@@ -423,9 +445,11 @@ function DisplayOrders() {
 		this.locationLeft.add(this.puHeader);
 		this.locationLeft.add(this.puLabel);
 		this.locationLeft.add(this.puStatus);
+		this.locationLeft.add(this.puSpecialInstruction);
 		this.locationRight.add(this.dlHeader);
 		this.locationRight.add(this.dlLabel);
 		this.locationRight.add(this.dlStatus);
+		this.locationRight.add(this.dlSpecialInstruction);
 		this.locationRow.add(this.locationWrap);
 		rows.push(this.locationRow);
 		if (puCurrentStatus === true) {
